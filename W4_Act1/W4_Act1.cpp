@@ -1,8 +1,6 @@
-// practice
-#include <cstdio>
+#include <iostream>
 
-int main() {
-    int x = 1;
-    std::printf("%i", x);
-    return 0;
-}
+ int main () {
+std::array arr = {1, 2, 3, 4, 5} ;
+return 0 ;
+ }
