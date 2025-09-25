@@ -21,7 +21,7 @@ std::array <int, 5> a1 {1, 2, 3, 4, 5} ; //created an array of integers
  //Ignore this just wanted to see how to print all elements in array
  for (int i = 0; i < 4; ++i)
     printf("%i\n", a3[i]);
-
+    
      std::vector<int> v = {8, 4, 5, 9};//created a vector of integers
      //Ignore this just wanted to see how to print all elements in vector
       for (int n : v)
