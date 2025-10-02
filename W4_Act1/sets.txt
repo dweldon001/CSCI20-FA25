@@ -1,0 +1,21 @@
+Includes the C++ Standard Library header for algorithms (like sort, find, etc.). I know this from the C++ standard library documentation.
+Includes the C standard I/O library (for functions like printf). Recognized from C/C++ documentation. Includes support for the
+std::array container. Known from the C++ container documentation. Includes support for input/output streams (like std::cout).
+Includes iterator support (for traversing containers). Includes support for the std::string class. Includes support for the std::vector
+container.
+
+int main () {
+
+Entry point of the program. Standard C++ program structure. std::array <int, 5> a1 {1, 2, 3, 4, 5}; Declares an array of 5 integers,
+initialized with values 1-5. printf("%i\n", a1[0]) ; Prints the first element of a1 (which is 1). printf is a C function; %i prints an integer.
+std::array <int, 3> a2 {21, 17, 196}; Declares an array of 3 integers, initialized with 21, 17, 196. initializer lists. printf("%i\n", a2[0]) ;
+Prints the first element of a2 (21). std::array <int, 4> a3 {6, 7, 9, 12,} ; Declares an array of 4 integers, initialized with 6, 7, 9, 12.
+printf("%i\n", a3[0])  Prints the first element of a3 (6). for (int i = 0; i < 4; ++i) printf("%i\n", a3[i]); Loops through all elements of a3 and
+prints each one. Standard for-loop and array indexing. std::vector<int> v = {8, 4, 5, 9}; Declares a vector of integers, initialized with 8,
+4, 5, 9. std::vector is a dynamic array. for (int n : v) std::cout << n << ' '; Range-based for loop to print each element of v separated by
+spaces. std::cout << '\n'; Prints a newline. printf("%i\n", v [0, 1, 2]) ; printf("%i\n", v [2]) ; Prints the third element of v (5).
+std::vector<int> v1 = {6, 7, 9, 10}; Declares another vector of integers. printf("%i\n", v1 [0]) ; Prints the first element of v1 (6).
+std::vector<int> v2 = {21, 36, 14 ,67}; Declares another vector of integers.
+printf("%i\n", v2 [2]) ; Prints the third element of v2 (14). return 0 ; Ends the program, returning 0 to the operating system.
+} Closes the main function.
+I know what each line does from C++ syntax, standard library documentation, and common programming practices.
