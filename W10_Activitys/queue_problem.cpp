@@ -1,6 +1,6 @@
 #include <cstdio>
 #include <vector>
-
+ 
 using std::vector;
 using std::printf;
 
