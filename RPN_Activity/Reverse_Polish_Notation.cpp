@@ -5,7 +5,7 @@
 int main() {
     vector<int> st;
 
-    // push two numbers and add them
+    //push two numbers and add them
     push_stack(st, 10);
     push_stack(st, 20);
     print_stack(st);
@@ -14,7 +14,7 @@ int main() {
     printf("After adding top two:\n");
     print_stack(st);
 
-    // More operations
+    //More operations
     push_stack(st, 5);
     push_stack(st, 7);
     print_stack(st);
@@ -22,7 +22,7 @@ int main() {
     printf("After adding 5 and 7:\n");
     print_stack(st);
 
-    // Final add (adds previous results)
+    //Final add (adds previous results)
     add_top_two(st);
     printf("After final add:\n");
     print_stack(st);
