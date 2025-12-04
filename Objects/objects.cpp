@@ -18,7 +18,7 @@ b = z;
 c = squid;
 return;
 }
-
+ 
 int A::road_out(){
     return b+c;
 }
