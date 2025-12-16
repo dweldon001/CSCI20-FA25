@@ -47,21 +47,34 @@ using std::printf;
 
 class Calc {
 private:
-    struct dicho {
+    struct clowns {
     int num;
     char op;
     };
-    stack<dicho> hid_st;
+    clowns(int a, char b) {
+        num = a;
+        op = b;
+    };
+    stack<clowns> clown_bakery;
     int addition (int,int);
     int subtraction (int,int);
     int multiplication (int,int);
     int division (int,int);
-public:
-  Calc(); //initialzes the stack
-  void load_village(vector<dicho>); //loads the stack with data
-   struct users_input {
-    int inptd_num;
-    char inptd_op;
- };
 
+public:
+  struct ice_cream {
+    int flavor;
+    char cone;
+    ice_cream(int a, char b) {
+        flavor = a;
+        cone = b;
+    }
+ };
+ //tool function
+vector<clowns> map_ice_clown(vector<ice_cream>);
+  //Calc(); //initialzes the values
+
+  //loads the stack
+void german_village_clown_school(vector<ice_cream>);
 };
+ 
