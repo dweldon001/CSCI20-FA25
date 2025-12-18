@@ -1,10 +1,12 @@
 #include <cstdio>
 #include <stack>
 #include <vector>
+#include <string>
 
 using std::vector;
 using std::stack;
 using std::printf;
+using std::string;
 
 /*
  stack calculator built using a monolithic object
@@ -50,10 +52,11 @@ private:
     struct clowns {
     int num;
     char op;
-    };
+    
     clowns(int a, char b) {
         num = a;
         op = b;
+    }
     };
     stack<clowns> clown_bakery;
     int addition (int,int);
@@ -70,11 +73,13 @@ public:
         cone = b;
     }
  };
- //tool function
+ //tool function turns ice cream vector to clown vector
 vector<clowns> map_ice_clown(vector<ice_cream>);
   //Calc(); //initialzes the values
 
   //loads the stack
 void german_village_clown_school(vector<ice_cream>);
+  //evaluates the stack
+  int evaluate();
 };
  

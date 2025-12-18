@@ -1,0 +1,19 @@
+The big problem we faced was getting the user data to interact with
+the private struct we created in our class. So we created a public struct for the user to
+be able to put their equation into and created a set of structs that we put in public.
+We took those structs and mapped them so we could use them in their private class.
+Using the private class we create our operations that can access the private data. 
+We then evaluate and run the equation.
+
+
+Logic!
+The public struct (ice_cream) is used as a bridge for user input, making it easy to build the equations.
+Internally, the private struct (clowns) is used for stack based evaluation, keeping the details hidden from the user.
+The mapping function (`map_ice_clown`) converts user input into a format suitable for computation. 
+This step allows the calculator to process any valid RPN expression provided by the user.
+By using the stack (clown_bakery), the calculator naturally follows the rules of Reverse Polish Notation, 
+where operands are pushed and operators trigger computation on the most recent operands.
+The class design keeps the stack and evaluation logic private, exposing only the necessary functions to the user. 
+The structure allows for easy addition of new operations or input types.
+The user builds an equation using the public struct. The equation is mapped and loaded into the internal stack. 
+The stack is evaluated using private logic, and the result is returned to the user.
